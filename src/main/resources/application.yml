@@ -1,0 +1,14 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://172.17.40.187:27017/CanariaAI
+
+  mvc:
+   view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+
+  autoconfigure:
+   exclude:
+      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+      - org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
